@@ -6,8 +6,6 @@ class Libro(models.Model):
 
     name = fields.Char(string='Título', required=True)
     autor = fields.Char(string='Autor')
-    editorial = fields.Char(string='Editorial')
-    fecha_publicacion = fields.Date(string='Fecha de Publicación')
     numero_uno = fields.Integer(string='Número Uno')
     numero_dos = fields.Integer(string='Número Dos')
     resultado = fields.Integer(string='Resultado', compute='_compute_resultado', store=True)
